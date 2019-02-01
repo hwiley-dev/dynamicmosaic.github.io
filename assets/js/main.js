@@ -70,11 +70,11 @@
 
 				var $article = $main_articles.filter('#' + id);
 
-				// No such article? Bail.
+				// If article returns false, return nothing
 					if ($article.length == 0)
 						return;
 
-				// Handle lock.
+				
 
 					// Already locked? Speed through "show" steps w/o delays.
 						if (locked || (typeof initial != 'undefined' && initial === true)) {
@@ -88,11 +88,11 @@
 							// Deactivate all articles (just in case one's already active).
 								$main_articles.removeClass('active');
 
-							// Hide header, footer.
+							// Hide header and footerfooter.
 								$header.hide();
 								$footer.hide();
 
-							// Show main, article.
+							// Show main and article
 								$main.show();
 								$article.show();
 
