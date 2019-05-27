@@ -114,7 +114,7 @@
 					// Lock.
 						locked = true;
 
-				// Article already visible? Just swap articles.
+				// Swap
 					if ($body.hasClass('is-article-visible')) {
 
 						// Deactivate current article.
